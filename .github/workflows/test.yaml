@@ -56,6 +56,6 @@ jobs:
         with:
           python-version: "${{ matrix.python-version }}"
 
-      - run: pip install ".[test]" "sphinx==${{ matrix.sphinx-version }}" "traitlets==${{ matrix.traitlets-version }}" ${{ matrix.pip-install-addition }}"
+      - run: pip install ".[test]" "sphinx==${{ matrix.sphinx-version }}" "traitlets==${{ matrix.traitlets-version }}" "${{ matrix.pip-install-addition }}"
 
       - run: pytest
