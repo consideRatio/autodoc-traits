@@ -32,15 +32,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
-    # NOTE: sphinx<4 isn't tested, and perhaps our tests could work by
-    #       constraining a sphinx dependency on jinja2, but as this hasn't been
-    #       done in sphinx or resolved in jinja2 over some time, it seems out of
-    #       scope for this project to workaround it.
-    #
-    #       In the next major release of autodoc_traits, we could require
-    #       sphinx>=4 to avoid this and reduce long term maintenance burden.
-    #
-    "sphinx",
+    "sphinx>=2",
     "traitlets",
 ]
 
