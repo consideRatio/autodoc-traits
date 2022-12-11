@@ -37,6 +37,6 @@ jobs:
         with:
           python-version: "${{ matrix.python-version }}"
 
-      - run: pip install ".[test]" "sphinx==${{ matrix.sphinx-version }}"
+      - run: pip install ".[test]" "sphinx==${{ matrix.sphinx-version }}" "jinja2<3.1"
 
       - run: pytest
